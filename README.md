@@ -5,7 +5,7 @@
 ### Queries 
 
 #### Query 1
-Query 1 is a simple query that outputs the first 10 rows of the Amazon dataset.
+Query 1 returns the first 10 rows of the Amazon dataset.
 
 #### Query 2
 Query 2 returns the count of each product category along with the total number of orders in that specific category; this is done by grouping all results by the category column.
@@ -14,7 +14,7 @@ Query 2 returns the count of each product category along with the total number o
 Query 3 gets the total number of orders, total units sold, and total revenue grouped by the fulfilment column. Orders that are cancelled or pending are excluded.
 
 #### Query 4
-Query 4 outputs the total number of orders and the total revenue generated in a given month. Orders that are cancelled or pending are excluded. 
+For a given month, query 4 returns the total number of orders and the total revenue. Orders that are cancelled or pending are excluded. 
 
 #### Query 5
 Query 5 returns the top 5 SKUs in each category ranked by the total revenue. The category, sku, total revenue, total units sold, and rank are all output in the result table. Cancelled, pending, or orders with a quantity of 0 are excluded.
@@ -35,7 +35,7 @@ IAM (AWS Identity and Access Management) allows you to control access to AWS ser
 #### S3
 
 ##### Description
-S3 is an object storage service that offers industry-leading scalability, data availability, security, and performance. Using S3, customers can protect any amount of data for a variety of usages such as web applications. S3 has a 99.9999999% durability rate, and companies all over the world use it to store millions of data intense applications.
+S3 is an object storage service that offers industry-leading scalability, data availability, security, and performance. Using S3, customers can protect any amount of data for a variety of usages such as web applications. S3 has a 99.9999999% durability rate, and companies all over the world use it to store millions of data-intensive applications.
 
 
 ## Approaches 
