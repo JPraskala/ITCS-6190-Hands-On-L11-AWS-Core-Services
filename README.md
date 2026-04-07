@@ -1,5 +1,9 @@
 # ITCS-6190-Hands-On-L11-AWS-Core-Services
 
+Name: Jacob Praskala
+
+Student ID Number: 800989838
+
 ## Explanations
 
 ### Queries 
