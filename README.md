@@ -8,7 +8,7 @@
 Query 1 is a simple query that outputs the first 10 rows of the Amazon dataset.
 
 #### Query 2
-Query 2 returns the count of each product category along with the total number of orders in that specific category; this is done by grouping all results by the categor column.
+Query 2 returns the count of each product category along with the total number of orders in that specific category; this is done by grouping all results by the category column.
 
 #### Query 3
 Query 3 gets the total number of orders, total units sold, and total revenue grouped by the fulfilment column. Orders that are cancelled or pending are excluded.
@@ -17,7 +17,7 @@ Query 3 gets the total number of orders, total units sold, and total revenue gro
 Query 4 outputs the total number of orders and the total revenue generated in a given month. Orders that are cancelled or pending are excluded. 
 
 #### Query 5
-Query 5 returns the top 5 SKU's in each category ranked by the total revenue. The category, sku, total revenue, total units sold, and rank are all output in the result table. Orders that are cancelled, pending, or have a quantity of 0 are excluded. 
+Query 5 returns the top 5 SKUs in each category ranked by the total revenue. The category, sku, total revenue, total units sold, and rank are all output in the result table. Cancelled, pending, or orders with a quantity of 0 are excluded.
 
 ### AWS Components 
 
@@ -35,7 +35,7 @@ IAM (AWS Identity and Access Management) allows you to control access to AWS ser
 #### S3
 
 ##### Description
-S3 is an object storage service that offers industry-leading scalability, data availability, security, and performance. Using S3, customers can protect any amount of data for a variety of usages such as web applications. S3 has a 99.9999999% durabiltiy rate, and companies all over the world use it to store millions of data intense applications.
+S3 is an object storage service that offers industry-leading scalability, data availability, security, and performance. Using S3, customers can protect any amount of data for a variety of usages such as web applications. S3 has a 99.9999999% durability rate, and companies all over the world use it to store millions of data intense applications.
 
 
 ## Approaches 
@@ -50,7 +50,7 @@ For the queries, my approach was to use my prior SQL knowledge to solve the prob
 
 ##### Description
 
-In this assignment, I created a Crawler using AWS Glue called `handson-l11-crawler`, and after creating the crawler, I ran it which transfered the data from Amazon CSV file to an SQL table. While the Crawler was running, CloudWatch was outputting messages through its log which included a timestamp and a message. From the screenshot below, it can be seen the Crawler was successfully executed and a table was created.
+In this assignment, I created a Crawler using AWS Glue called `handson-l11-crawler`. After creating the crawler, I ran it, which transfered the data from the Amazon CSV file into an SQL table. While the Crawler was running, CloudWatch was outputting messages through its log which included a timestamp and a message. From the screenshot below, it can be seen the Crawler was successfully executed and a table was created.
 
 ##### Screenshot
 
@@ -60,7 +60,7 @@ In this assignment, I created a Crawler using AWS Glue called `handson-l11-crawl
 
 ##### Description
 
-In this assignment, I used IAM to create a new role called `HandOn-L11`, and this role has three permissions enabled which gives the user full access to S3 and Glue as well as the Glue Service Role permission. From the screenshot below, it can be seen the role was successfully created.
+In this assignment, I used IAM to create a new role called `HandOn-L11`. This role has three permissions enabled, which give those who are in the role full access to S3 and Glue, as well as the Glue Service Role Permission. From the screenshot below, it can be seen the role was successfully created.
 
 ##### Screenshot
 
@@ -70,7 +70,7 @@ In this assignment, I used IAM to create a new role called `HandOn-L11`, and thi
 
 ##### Description
 
-In this assginment, I created a Bucket through S3 called `handson-l11-itcs-6190`, which contains the raw csv file and the csv files produced by the queries above. From the screenshot below, it can be seen the Bucket was created and is operating as expected.
+In this assignment, I created a Bucket in S3 called `handson-l11-itcs-6190`, which contains the raw CSV file and the csv files produced by the queries above. From the screenshot below, it can be seen the Bucket was created and is operating as expected.
 
 ##### Screenshot
 <img width="1918" height="911" alt="s3_screenshot" src="https://github.com/user-attachments/assets/a5da205a-0dec-439f-900c-fd5a309eeed7" />
